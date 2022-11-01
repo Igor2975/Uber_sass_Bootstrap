@@ -80,7 +80,6 @@ nav
     margin-top: 19px
     +btn_haver
    
-
 .promo
   min-height: 800px
   background: url(../img/header/layers.png) center (center / cover) no-repeat
@@ -125,8 +124,6 @@ nav
     color: #ffffff
     +btn_haver
     
-    
-
 .cause
   padding: 71px 0 65px 0
 
@@ -247,6 +244,25 @@ nav
       bottom: 35px
       transform: translateX(-50%)
       cursor: pointer
+      &:before
+        content: ""
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main-color
+      &:after
+        content: ""
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $main-color
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+      &:hover
+        &:before,&:after
+          background-color: $second-color  
+
 
 .select
   min-height:895px  
