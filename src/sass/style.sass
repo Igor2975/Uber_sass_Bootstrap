@@ -352,12 +352,37 @@ nav
   a
     &:hover
       text-decoration: none
-      color: red
+      color: red    
   &_line 
     width: 299px
     height: 4px
     background-color: #1fbad6  
     margin: 0 auto
+  &_wrapper
+    display: flex
+    justify-content: space-between 
+    align-items: flex-start
+    padding-top: 32px 
+  &_wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end 
+  &_social
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &_item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      i
+        color: #fff 
   &_links
     width: 390px
     margin: 0 auto
@@ -388,6 +413,8 @@ nav
     text-transform: uppercase
     color: #1fbad6 
     margin-top: 19px
+  &_mobile  
+    
 
 
    
