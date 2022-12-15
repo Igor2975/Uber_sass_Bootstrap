@@ -57,8 +57,7 @@
          &_title
             margin-top: 20px 
     .title
-        font-size: 30px        
-                  
+        font-size: 30px                     
     .mobile
         &_item
             width: 222px
@@ -78,11 +77,56 @@
             align-items: center 
         &_wrapper > div
             width: 40%  
-            margin-bottom: 30px    
-          
-              
+            margin-bottom: 30px          
         &_social
             width: auto
             justify-content: center
 
-           
+@media (max-width: 767px) 
+    .menu
+        position: fixed
+        flex-direction: column
+        left: -100%
+        top: 0 
+        display: flex 
+        justify-content: center
+        align-items: center
+        padding: 20px 15px
+        width: 50%
+        height: 100vh
+        background-color: rgba(0, 0, 0, .8) 
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            border: none
+            padding-right: 0
+            margin: 10px 0 
+        &_link
+            font-size: 20px          
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            margin-bottom: 2px
+            background-color: #fff
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2) 
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px)  rotate(45deg)           
+                    
+                
